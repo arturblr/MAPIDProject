@@ -1,0 +1,201 @@
+body, html {
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.button-submit {
+    padding: 10px 20px;
+    background-color: #4251a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-submit:hover {
+    background-color: #302b69;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4251a2;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/featured/?black modern house') no-repeat center center/cover;
+    height: 300px;
+    position: relative; /* Для позиционирования overlay относительно .hero */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемняющий цвет (черный с прозрачностью 0.5) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 20px; /* Добавляет небольшие отступы для текста */
+    box-sizing: border-box; /* Учитывает padding в размерах элемента */
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #02475e;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+form {
+    margin: 20px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #005792;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #4251a2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.property-grid .property-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .logo p {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .stat {
+            text-align: center;
+            color: #333;
+        }
+
+        .stat img {
+            width: 50px; /* Adjust based on actual icon size */
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4251a2;
+        }
+
+        .label {
+            font-size: 16px;
+            color: #666;
+        }
