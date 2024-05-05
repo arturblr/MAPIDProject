@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="/css/admin-style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="/js/script-admin.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="cottages">Строительство коттеджей</a>
+        <a href="apartments">Продажа квартир</a>
+        <a href="contact">Связаться</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Панель администратора</h2>
+    <section id="admin-login">
+        <form id="loginForm">
+            <label for="username">Login:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Войти</button>
+        </form>
+    </section>
+    <div id="user-messages">
+    </div>
+    <section id="admin-panel" style="display:none;">
+        <h3>Управление недвижимостью</h3>
+        <div class="form-container">
+        <form id="addApartmentForm" class="property-form">
+            <label for="apartmentHouse">Дом:</label>
+            <input type="text" id="apartmentHouse" name="house" required>
+
+            <label for="apartmentRooms">Кол-во комнат:</label>
+            <input type="number" id="apartmentRooms" name="rooms" required>
+
+            <label for="apartmentArea">Площадь:</label>
+            <input type="number" id="apartmentArea" name="area" required>
+
+            <label for="apartmentFloor">Этаж:</label>
+            <input type="number" id="apartmentFloor" name="floor" required>
+
+            <label for="apartmentPrice">Цена:</label>
+            <input type="number" id="apartmentPrice" name="price" required>
+
+            <label for="apartmentImage">URL Картинки:</label>
+            <input type="url" id="apartmentImage" name="image" required>
+            <button type="submit">Добавить квартиру</button>
+        </form>
+        <form id="addCottageForm" class="property-form">
+            <label for="cottageType">Тип:</label>
+            <input type="text" id="cottageType" name="type" required>
+
+            <label for="cottageSize">Площадь:</label>
+            <input type="number" id="cottageSize" name="size" required>
+
+            <label for="cottagePrice">Цена:</label>
+            <input type="number" id="cottagePrice" name="price" required>
+
+            <label for="cottageImage">URL Картинки:</label>
+            <input type="url" id="cottageImage" name="image" required>
+            <button type="submit">Добавить коттедж</button>
+        </form>
+        </div>
+    </section>
+
+    <section id="properties-list" class="properties-section" style="display:none;">
+        <h3>Список добавленной недвижимости</h3>
+        <div id="cottages-list" class="property-list">
+            <h4>Коттеджи</h4>
+        </div>
+        <div id="apartments-list" class="property-list">
+            <h4>Квартиры</h4>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 ОАО "МАПИД".</p>
+</footer>
+</body>
+</html>

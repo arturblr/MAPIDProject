@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cottages</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1">
+    <title>Строительство коттеджей</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script-cottages.js" defer></script>
 </head>
 <body>
-<h1>Available Cottages</h1>
-<div id="cottages-list"></div>
-<script src="/js/app.js"></script>
+<header>
+    <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="Логотип"></a>
+    </div>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="cottages">Строительство коттеджей</a>
+        <a href="apartments">Продажа квартир</a>
+        <a href="contact">Связаться</a>
+        <a href="admin">Войти</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Строительство коттеджей</h2>
+
+    <form id="filter-cottages">
+        <label for="cottageType">Тип:</label>
+        <select id="cottageType" name="cottageType">
+        </select>
+
+        <label for="size">Площадь:</label>
+        <input type="number" id="size" name="size" placeholder="Площадь, m²">
+
+        <label for="price-min">Минимальная цена:</label>
+        <input type="number" id="price-min" name="price-min" placeholder="Минимальная цена">
+
+        <label for="price-max">Максимальная цена:</label>
+        <input type="number" id="price-max" name="price-max" placeholder="Максимальная цена">
+
+        <button type="submit" class="button-submit">Найти</button>
+    </form>
+
+    <section id="available-cottages">
+        <div class="property-grid"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 ОАО "МАПИД"</p>
+</footer>
 </body>
 </html>
